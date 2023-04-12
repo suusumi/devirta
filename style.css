@@ -88,7 +88,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 184px 0px 191px 0px;
+  padding: 184px 0px 70px 0px;
   position: relative;
   z-index: 2;
 }
@@ -129,7 +129,7 @@ h1 {
   }
 }
 .block-1_image {
-  max-width: 600px;
+  max-width: 570px;
 }
 
 @media (max-width: 1267px) {
@@ -186,4 +186,72 @@ h1 {
   margin: 10px 0;
   text-decoration: none;
   background-color: #666666;
+}
+
+.page__about-block {
+  background-color: white;
+  padding: 40px 0px 0px 0px;
+}
+
+.about-block {
+  position: relative;
+}
+
+.aboutUsRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr_about {
+  transform: rotate(90deg);
+  border: 4px solid #363636;
+  margin-left: 120px;
+}
+
+@media (max-width: 520px) {
+  .hr_about {
+    margin-left: 80px;
+  }
+}
+.about-block__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0px 70px 0px;
+  position: relative;
+}
+
+.about-block__title {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.about-block__row_text {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 790px) {
+  .about-block__row_text {
+    flex-direction: column;
+  }
+}
+.about-block__text {
+  max-width: 565px;
+  line-height: 175%;
+  padding-right: 140px;
+}
+
+@media (max-width: 790px) {
+  .about-block__text {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 620px) {
+  .about-block__text {
+    margin-bottom: 60px;
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
