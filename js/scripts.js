@@ -42,3 +42,5 @@ function checkFadeIn() {
 }
 
 window.addEventListener('scroll', checkFadeIn);
+
+

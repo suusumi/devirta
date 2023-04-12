@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="page__about-block about-block">
+        <div class="page__about-block about-block" id="About">
           <div class="about-block__container container">
             <div class="aboutUsRow">
               <h1 class="main-block__title fade-in">О нас</h1>
@@ -98,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="page__directions-block directions-block">
+        <div class="page__directions-block directions-block" id="Directions">
           <div class="directions-block__container container">
             <h1 class="main-block__title fade-in">Направления лечения</h1>
             <div class="about-block__body">
@@ -154,14 +154,30 @@
             
           </div>
         </div>
-        <div class="page__projects-block projects-block">
+        <selection class="page__projects-block projects-block" id="Projects">
           <div class="projects-block__container container">
             <h1 class="main-block__title">Проекты Девирты</h1>
-          </div>
+          </selection>
 
         </div>
       </main>
     </div>
-    <script src="./scripts.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script>
+      // выбираем все ссылки внутри меню
+      $('.menu__link').on('click', function (event) {
+        // отменяем стандартное поведение ссылки
+        event.preventDefault();
+
+        // получаем href, который соответствует якорю, к которому нужно прокручивать
+        const href = $(this).attr('href');
+
+        // плавно скроллим страницу до элемента, соответствующего якорю
+        $('html, body').animate({
+          scrollTop: $(href).offset().top
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
