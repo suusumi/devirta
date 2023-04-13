@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Девирта</title>
   </head>
   <body>
@@ -60,7 +61,7 @@
                   >
                 </div>
               </div>
-              <div class="main-block__image">
+              <div class="main-block__image parallax">
                 <img
                   src="./img/block_1_image.png"
                   alt="logo"
@@ -71,22 +72,22 @@
             </div>
           </div>
         </div>
-        <div class="page__about-block about-block">
+        <div class="page__about-block about-block" id="About">
           <div class="about-block__container container">
             <div class="aboutUsRow">
-              <h1 class="main-block__title">О нас</h1>
+              <h1 class="main-block__title fade-in">О нас</h1>
               <hr class="hr_about" />
             </div>
             <div class="about-block__body">
               <div>
                 <div class="about-block__row_text">
-                  <div class="about-block__text">
+                  <div class="about-block__text fade-in">
                     Один из ведущих медицинских центров в Волгограде.
                     Предоставление квалифицированной медицинской помощи жителям
                     города и области. Восстанавливаем когнитивные функции,
                     моторику.
                   </div>
-                  <div class="about-block__text">
+                  <div class="about-block__text fade-in">
                     Один из ведущих медицинских центров в Волгограде.
                     Предоставление квалифицированной медицинской помощи жителям
                     города и области. Восстанавливаем когнитивные функции,
@@ -97,18 +98,18 @@
             </div>
           </div>
         </div>
-        <div class="page__directions-block directions-block">
+        <div class="page__directions-block directions-block" id="Directions">
           <div class="directions-block__container container">
-            <h1 class="main-block__title">Направления лечения</h1>
+            <h1 class="main-block__title fade-in">Направления лечения</h1>
             <div class="about-block__body">
               <div>
                 <div class="about-block__row_text">
-                  <div class="about-block__text">
+                  <div class="about-block__text fade-in">
                     Проекты Девирты направлены на лечение когнитивных
                     заболеваний, улучшение моторики, двигательной активности,
                     восстановление утраченных функций.
                   </div>
-                  <div class="about-block__text">
+                  <div class="about-block__text fade-in">
                     Все это для того, чтобы человек вернулся к повседневной
                     жизни и своей профессиональной деятельности.
                   </div>
@@ -118,7 +119,8 @@
             <div>
               <hr class="hr_directions" />
             </div>
-            <div class="directions__card">
+            <div class="direction_cards">
+              <div class="directions__card fade-in">
               <div class="title_card">
                 <p class="title_card_text">Нейрореабилитация</p>
                 <img
@@ -133,7 +135,7 @@
                 ОДА после перенесенных заболеваний, травм или операций.
               </p>
             </div>
-            <div class="directions__card">
+            <div class="directions__card fade-in">
               <div class="title_card">
                 <p class="title_card_text">Восстановление моторики</p>
                 <img
@@ -148,9 +150,34 @@
                 нарушениями после травм, операций и инсультов.
               </p>
             </div>
+            </div>
+            
           </div>
+        </div>
+        <selection class="page__projects-block projects-block" id="Projects">
+          <div class="projects-block__container container">
+            <h1 class="main-block__title">Проекты Девирты</h1>
+          </selection>
+
         </div>
       </main>
     </div>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script>
+      // выбираем все ссылки внутри меню
+      $('.menu__link').on('click', function (event) {
+        // отменяем стандартное поведение ссылки
+        event.preventDefault();
+
+        // получаем href, который соответствует якорю, к которому нужно прокручивать
+        const href = $(this).attr('href');
+
+        // плавно скроллим страницу до элемента, соответствующего якорю
+        $('html, body').animate({
+          scrollTop: $(href).offset().top
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
