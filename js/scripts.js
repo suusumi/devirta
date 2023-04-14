@@ -44,3 +44,14 @@ function checkFadeIn() {
 window.addEventListener('scroll', checkFadeIn);
 
 
+const cardHeaders = document.querySelectorAll('.card-header');
+
+cardHeaders.forEach(cardHeader => {
+  cardHeader.addEventListener('click', () => {
+    const cardBody = cardHeader.nextElementSibling;
+    cardBody.style.display = cardBody.style.display === 'none' ? 'block' : 'none';
+  });
+});
+
+
+
