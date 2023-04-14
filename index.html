@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Девирта</title>
   </head>
   <body>
@@ -121,36 +121,37 @@
             </div>
             <div class="direction_cards">
               <div class="directions__card fade-in">
-              <div class="title_card">
-                <p class="title_card_text">Нейрореабилитация</p>
-                <img
-                  src="./img/brain_svg.svg"
-                  alt="brain_svg"
-                  srcset=""
-                  class="brain_img"
-                />
+                <div class="title_card">
+                  <p class="title_card_text">Нейрореабилитация</p>
+                  <img
+                    src="./img/brain_svg.svg"
+                    alt="brain_svg"
+                    srcset=""
+                    class="brain_img"
+                  />
+                </div>
+                <p class="subtitle_card_text">
+                  Восстановление когнитивных функций, средней и крупной
+                  моторики, ОДА после перенесенных заболеваний, травм или
+                  операций.
+                </p>
               </div>
-              <p class="subtitle_card_text">
-                Восстановление когнитивных функций, средней и крупной моторики,
-                ОДА после перенесенных заболеваний, травм или операций.
-              </p>
-            </div>
-            <div class="directions__card fade-in">
-              <div class="title_card">
-                <p class="title_card_text">Восстановление моторики</p>
-                <img
-                  src="./img/hand_svg.svg"
-                  alt="hand_svg"
-                  srcset=""
-                  class="hand_img"
-                />
+              <div class="directions__card fade-in">
+                <div class="title_card">
+                  <p class="title_card_text">Восстановление моторики</p>
+                  <img
+                    src="./img/hand_svg.svg"
+                    alt="hand_svg"
+                    srcset=""
+                    class="hand_img"
+                  />
+                </div>
+                <p class="subtitle_card_text">
+                  Лечение и реабилитация пациентов с двигательными и
+                  когнитивными нарушениями после травм, операций и инсультов.
+                </p>
               </div>
-              <p class="subtitle_card_text">
-                Лечение и реабилитация пациентов с двигательными и когнитивными
-                нарушениями после травм, операций и инсультов.
-              </p>
             </div>
-            </div> 
           </div>
         </div>
         <selection class="page__projects-block projects-block" id="Projects">
@@ -160,49 +161,65 @@
         </selection>
         <div class="card_color fade-in">
           <div class="card container">
-          <div class="card-header">
-            <span class="card-title">антистресс</span>     
-            <img src="./img/logos/antibol.png" alt="Логотип Антиболь" class="card_logo">
-            <span class="card-info">Узнать подробнее</span>
-          </div>
-          <div class="card-body">
-            <div class="card-descriptions">
-               <p class="card-description-1">Комплекс "Антистресс" – система для лечения посттравматического стрессового расстройства с использованием виртуальной
-            реальности в условиях лечебно-профилактического учреждения.</p>
-                <p class="card-description-2">Комплекс "Антистресс" – система для лечения посттравматического стрессового расстройства с
-              использованием виртуальной
-              реальности в условиях лечебно-профилактического учреждения.</p>
+            <div class="card-header">
+              <span class="card-title">антистресс</span>
+              <img
+                src="./img/logos/antibol.png"
+                alt="Логотип Антиболь"
+                class="card_logo"
+              />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс "Антистресс" – система для лечения
+                  посттравматического стрессового расстройства с использованием
+                  виртуальной реальности в условиях лечебно-профилактического
+                  учреждения.
+                </p>
+                <p class="card-description-2">
+                  Комплекс "Антистресс" – система для лечения
+                  посттравматического стрессового расстройства с использованием
+                  виртуальной реальности в условиях лечебно-профилактического
+                  учреждения.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        
       </main>
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__main container">
             <div class="footer__main_label fade-in">Девирта</div>
-            <div class="footer__label fade-in">ООО "Академия Терапии Виртуальной Реальностью "Девирта"</div>
+            <div class="footer__label fade-in">
+              ООО "Академия Терапии Виртуальной Реальностью "Девирта"
+            </div>
             <div class="footer__label fade-in">OOO "DEVIRTA 21"</div>
           </div>
         </div>
       </footer>
     </div>
+
     <script src="./js/scripts.js"></script>
     <script src="./js/jquery.js"></script>
     <script>
       // выбираем все ссылки внутри меню
-      $('.menu__link').on('click', function (event) {
+      $(".menu__link").on("click", function (event) {
         // отменяем стандартное поведение ссылки
         event.preventDefault();
 
         // получаем href, который соответствует якорю, к которому нужно прокручивать
-        const href = $(this).attr('href');
+        const href = $(this).attr("href");
 
         // плавно скроллим страницу до элемента, соответствующего якорю
-        $('html, body').animate({
-          scrollTop: $(href).offset().top
-        }, 1000);
+        $("html, body").animate(
+          {
+            scrollTop: $(href).offset().top,
+          },
+          1000
+        );
       });
     </script>
   </body>

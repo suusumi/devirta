@@ -466,6 +466,13 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 950px) {
+  .card-descriptions {
+    flex-direction: column;
+  }
+}
+
 .card-description-1 {
   padding-top: 50px;
   font-family: 'Manrope';
@@ -485,4 +492,10 @@ h1 {
   line-height: 175%;
   max-width: 420px;
   margin-left:auto;
+}
+
+@media (max-width: 950px) {
+  .card-description-2 {
+    margin-left: 0;
+  }
 }
