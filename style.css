@@ -156,6 +156,10 @@ h1 {
   max-width: 570px;
 }
 
+.block-2-image {
+  max-width: 100px;
+}
+
 @media (max-width: 1267px) {
   .block-1_image {
     max-width: 500px;
@@ -599,3 +603,5 @@ h1 {
 ul {
   padding-inline-start: 0;
 }
+
+
