@@ -74,14 +74,46 @@ h1 {
   margin-left: auto;
 }
 
+@media (max-width: 800px) {
+  .header__menu { 
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .menu__list {
   flex-wrap: wrap;
   display: flex;
   margin-left: auto;
 }
 
+
+
 .menu__item:not(:last-child) {
   margin: 0px 40px 0px 0px;
+}
+
+.menu__icon {
+  display: none;
+  /* скрыть по умолчанию */
+}
+
+@media (max-width: 720px) {
+  .menu__list {
+    display: none;
+  }
+
+  .menu__icon {
+    display: block; /* показать на мобильных устройствах */
+    cursor: pointer;
+  }
+
+  
+  .menu__list.active {
+    display: flex;
+    margin-left: auto;
+    width: 100px;
+  }
 }
 
 .menu__link {

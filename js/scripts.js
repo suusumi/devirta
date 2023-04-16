@@ -55,3 +55,9 @@ cardHeaders.forEach(cardHeader => {
 
 
 
+const icon = document.querySelector('.menu__icon');
+const menuList = document.querySelector('.menu__list');
+
+icon.addEventListener('click', function() {
+  menuList.classList.toggle('active'); /* добавить или удалить класс "active" */
+});
