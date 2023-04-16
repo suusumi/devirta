@@ -604,4 +604,42 @@ ul {
   padding-inline-start: 0;
 }
 
+.hr_card {
+  /* transform: rotate(30deg); */
+    border: 2px solid #8B8B8B;
+    width: 208px;
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: -72px;
+    
+}
 
+@media (max-width: 1650px) {
+  .hr_card {
+    width: 152px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .hr_card {
+    width: 122px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .hr_card {
+    width: 82px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .hr_card {
+    width: 62px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .hr_card {
+    display: none;
+  }
+}
