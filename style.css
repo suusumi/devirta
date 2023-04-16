@@ -1,4 +1,4 @@
-
+/* -------------- ОБЩИЕ СТИЛИ -------------- */
 @charset "UTF-8";
 body {
   background-color: #F9F9F9;
@@ -8,7 +8,6 @@ body {
   font-weight: 400;
   margin: 0;
 }
-
 
 li {
   list-style: none;
@@ -33,6 +32,7 @@ h1 {
   box-sizing: content-box;
 }
 
+/* -------------- HEADER -------------- */
 .header {
   position: fixed;
   width: 100%;
@@ -51,7 +51,23 @@ h1 {
 .header__logo {
   font-size: 24px;
   font-weight: 300;
-  color: white;
+  color: black;
+}
+
+.devirta__logo {
+
+}
+
+@media (max-width: 905px) {
+  .devirta__logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 522px) {
+  .devirta__logo {
+    width: 170px;
+  }
 }
 
 .header__menu {
@@ -84,6 +100,7 @@ h1 {
   flex: 1 1 auto;
 }
 
+/* -------------- Первый блок -------------- */
 .main-block {
   position: relative;
 }
@@ -102,6 +119,7 @@ h1 {
     flex-direction: column;
   }
 }
+
 .main-block__text {
   font-size: 16px;
   line-height: 175%;
@@ -117,6 +135,7 @@ h1 {
   margin-left: 30px;
 }
 
+/* --- Позиционирование параллакс изображения --- */
 @media (max-width: 1267px) {
   .main-block__image {
     margin-left: 120px;
@@ -127,11 +146,12 @@ h1 {
     margin-left: 80px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 905px) {
   .main-block__image {
     margin-left: 0px;
   }
 }
+
 .block-1_image {
   max-width: 570px;
 }
@@ -151,6 +171,7 @@ h1 {
     max-width: 320px;
   }
 }
+
 .main-block__title {
   font-size: 60px;
   font-weight: 700;
@@ -192,6 +213,7 @@ h1 {
   background-color: #666666;
 }
 
+/* -------------- Блок "О Нас" -------------- */
 .page__about-block {
   background-color: white;
   padding: 60px 0px 0px 0px;
@@ -259,6 +281,8 @@ h1 {
     max-width: 300px;
   }
 }
+
+/* -------------- Блок "Направления лечения" -------------- */
 .page__directions-block {
   padding: 60px 0px 0px 0px;
 }
@@ -276,6 +300,8 @@ h1 {
     border: 3px solid #363636;
   }
 }
+
+/* -------------- Карточка направления -------------- */
 .title_card {
   display: flex;
   flex-direction: row;
@@ -325,9 +351,7 @@ h1 {
   }
 }
 
-
-
-/* PARALLAX */
+/* -------------- PARALLAX -------------- */
 .parallax {
   transform: translate3d(0, 0, 0);
   /* transition: transform 300ms ease-in-out; */
@@ -339,7 +363,7 @@ h1 {
   height: auto;
 }
 
-/* OPACITY TRANSITION */
+/* -------------- OPACITY TRANSITION -------------- */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -393,9 +417,31 @@ h1 {
   }
 }
 
-/* CARD */
+/* -------------- Карточка проекта -------------- */
 .card_color {
   background-color: #ECECEC;
+  padding: 60px 0px 60px 0px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .card_color {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card_color {
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card_color {
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 10px;
+  }
 }
 
 .card {
@@ -425,6 +471,8 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   line-height: 175%;
+  width: 15%;
+  
 }
 
 @media (max-width: 620px) {
@@ -481,9 +529,9 @@ h1 {
     transform: translateY(0px);
   }
 }
+
 .card-descriptions {
   display: flex;
-  align-items: center;
 }
 
 @media (max-width: 950px) {
@@ -513,8 +561,41 @@ h1 {
   margin-left:auto;
 }
 
+.card-description-2-li {
+  padding-top: 50px;
+  max-width: 420px;
+  line-height: 175%;
+}
+
+@media (max-width: 950px) {
+  .card-description-2-li {
+    list-style: none;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .card-description-2-li {
+    list-style: none;
+    padding-top: 10px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-description-2-li {
+    list-style: none;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}
+
 @media (max-width: 950px) {
   .card-description-2 {
     margin-left: 0;
   }
+}
+
+ul {
+  padding-inline-start: 0;
 }
