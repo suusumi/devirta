@@ -49,9 +49,15 @@ const cardHeaders = document.querySelectorAll('.card-header');
 cardHeaders.forEach(cardHeader => {
   cardHeader.addEventListener('click', () => {
     const cardBody = cardHeader.nextElementSibling;
-    cardBody.style.display = cardBody.style.display === 'none' ? 'block' : 'none';
+    cardBody.style.display = cardBody.style.display === 'block' ? 'none' : 'block';
   });
 });
 
 
 
+const icon = document.querySelector('.menu__icon');
+const menuList = document.querySelector('.menu__list');
+
+icon.addEventListener('click', function() {
+  menuList.classList.toggle('active'); /* добавить или удалить класс "active" */
+});

@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Девирта</title>
   </head>
   <body>
@@ -24,10 +24,12 @@
       <header class="header">
         <div class="header__container container">
           <a href="" class="header__logo">
-            <img src="./img/devirta_logo.png" alt="logo" srcset="" />
+            <img src="./img/logos/devirta_test_logo.png" alt="logo" srcset="" class="devirta__logo" />
+            <!-- <i>DEVIRTA</i> -->
           </a>
 
           <nav class="header__menu menu">
+            
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#About" class="menu__link">О нас</a>
@@ -39,6 +41,9 @@
                 <a href="#Projects" class="menu__link">Проекты</a>
               </li>
             </ul>
+            <div class="menu__icon">
+              <img src="./img/menu.svg" alt="" srcset="">
+            </div>
           </nav>
         </div>
       </header>
@@ -46,6 +51,7 @@
         <div class="page__main-block main-block">
           <div class="main-block__container container">
             <div class="main-block__body">
+              
               <div>
                 <h1 class="main-block__title">
                   Разработка инновационных решений
@@ -56,7 +62,7 @@
                   города и области.
                 </div>
                 <div class="main-block__buttons">
-                  <a href="#About" class="main-block__button"
+                  <a href="#About" class="main-block__button menu__link"
                     >узнать подробнее</a
                   >
                 </div>
@@ -119,38 +125,45 @@
             <div>
               <hr class="hr_directions" />
             </div>
-            <div class="direction_cards">
+            
+              <div class="direction_cards">
               <div class="directions__card fade-in">
-              <div class="title_card">
-                <p class="title_card_text">Нейрореабилитация</p>
-                <img
-                  src="./img/brain_svg.svg"
-                  alt="brain_svg"
-                  srcset=""
-                  class="brain_img"
-                />
+                <div class="title_card">
+                  <p class="title_card_text">Нейрореабилитация</p>
+                  <img
+                    src="./img/brain_svg.svg"
+                    alt="brain_svg"
+                    srcset=""
+                    class="brain_img"
+                  />
+                </div>
+                <p class="subtitle_card_text">
+                  Восстановление когнитивных функций, средней и крупной
+                  моторики, ОДА после перенесенных заболеваний, травм или
+                  операций.
+                </p>
               </div>
-              <p class="subtitle_card_text">
-                Восстановление когнитивных функций, средней и крупной моторики,
-                ОДА после перенесенных заболеваний, травм или операций.
-              </p>
-            </div>
-            <div class="directions__card fade-in">
-              <div class="title_card">
-                <p class="title_card_text">Восстановление моторики</p>
-                <img
-                  src="./img/hand_svg.svg"
-                  alt="hand_svg"
-                  srcset=""
-                  class="hand_img"
-                />
+              <div class="directions__card fade-in">
+                <div class="title_card">
+                  <p class="title_card_text">Восстановление моторики</p>
+                  <img
+                    src="./img/hand_svg.svg"
+                    alt="hand_svg"
+                    srcset=""
+                    class="hand_img"
+                  />
+                </div>
+                <p class="subtitle_card_text">
+                  Лечение и реабилитация пациентов с двигательными и
+                  когнитивными нарушениями после травм, операций и инсультов.
+                </p>
               </div>
-              <p class="subtitle_card_text">
-                Лечение и реабилитация пациентов с двигательными и когнитивными
-                нарушениями после травм, операций и инсультов.
-              </p>
             </div>
-            </div> 
+            <!-- <div class="main-block__image parallax">
+              <img src="./img/block_1_image.png" alt="logo" srcset="" class="block-2-image" />
+            </div> -->
+            
+            
           </div>
         </div>
         <selection class="page__projects-block projects-block" id="Projects">
@@ -159,50 +172,286 @@
           </div>
         </selection>
         <div class="card_color fade-in">
+          <hr class="hr_card" />
           <div class="card container">
-          <div class="card-header">
-            <span class="card-title">антистресс</span>     
-            <img src="./img/logos/antibol.png" alt="Логотип Антиболь" class="card_logo">
-            <span class="card-info">Узнать подробнее</span>
-          </div>
-          <div class="card-body">
-            <div class="card-descriptions">
-               <p class="card-description-1">Комплекс "Антистресс" – система для лечения посттравматического стрессового расстройства с использованием виртуальной
-            реальности в условиях лечебно-профилактического учреждения.</p>
-                <p class="card-description-2">Комплекс "Антистресс" – система для лечения посттравматического стрессового расстройства с
-              использованием виртуальной
-              реальности в условиях лечебно-профилактического учреждения.</p>
+            <div class="card-header">
+              <span class="card-title">антиболь</span>
+              <img
+                src="./img/logos/antibol.png"
+                alt="Логотип Антиболь"
+                class="card_logo"
+              />
+              <span class="card-info ">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс "Девирта – Антиболь" – система нейрореабилитации с
+                  использованием виртуальной реальности в условиях
+                  лечебно-профилактического учреждения и/или домашних условиях с
+                  возможностью дистанционного патронажа. Основная задача
+                  программы – уменьшение интенсивности болевого синдрома;
+                  отвлечение пациента от неприятных ощущений во время выполнения
+                  медицинских манипуляций в процедурных кабинетах, перевязочных,
+                  диагностических отделениях и т.д.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При острой и хронической боли</li>
+                </ul>
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">делфи</span>
+              <img src="./img/logos/delphi.png" alt="Логотип Делфи" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс «Девирта – Делфи» – система нейрореабилитации с использованием виртуальной реальности в условиях
+                  лечебно-профилактического учреждения и/или домашних условиях с возможностью дистанционного контроля.
+                  Данное программное обеспечение разработано на основе ключевой реабилитационной модели неврологических пациентов –
+                  концепции повторений Хебба и современных достижений на технической арене.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При первичном ишемическом инсульте</li>
+                  <li>При супратенториальной локализации ИИ</li>
+                  <li>При артрозах</li>
+                  <li>При когнитивном дефиците</li>
+                  <li>При профилактике гиподинамии</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">точность</span>
+              <img src="./img/logos/accuracy.png" alt="Логотип Точность" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс "Девирта – Точность"– система нейрореабилитации с использованием виртуальной реальности в условиях
+                  лечебно-профилактического учреждения и/или домашних условиях с возможностью дистанционного патронажа. Комплекс направлен
+                  на тренировки пальцев рук, которые положительно влияют на развитие головного мозга, который, в свою очередь, тесно
+                  связан с центром развития речи. Благодаря регулярным тренировкам мелкой моторики рук происходит интенсивное развитие
+                  таких психических процессов, как мышление, внимание, память и речь, происходит быстрое овладение утраченными ранее
+                  бытовыми навыками, а все движения становятся координированными.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При периферическом и/или центральном парезом верхней конечности в результате инсульта</li>
+                  <li>При черепно-мозговой травме</li>
+                  <li>При миелопатии (повреждение спинного мозга)</li>
+                  <li>При наличии рассеянного склероза</li>
+                  <li>При миопатии</li>
+                  <li>При травматическмх повреждениях различного генеза</li>
+                  <li>Для улучшения мелкой моторики у детей и взрослых</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">антиковид обоняние</span>
+              <img src="./img/logos/obonyanie.png" alt="Логотип Антиковид обоняние" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Антиковид Обоняние - программный комплекс, разработанный с применением технологии виртуальной реальности и когнитивных
+                  методик. Он нацелен на восстановление обонятельной функции человека. Преимуществом проекта является - уникальный
+                  разработанный протокол восстановление и тренировки функции обоняния в сочетании с методиками нейротренинга и релаксации,
+                  возможность домашнего использования, благодаря функции удаленного контроля, получению после прохождения пациентом сессии
+                  отчета с результатами и возможность настройки сессии, что позволяет более персонифицировано подойти к каждому пациенту.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При восстановлении после болезней дыхательной системы (при хронических заболевания вне обострения)</li>
+                  <li>При восстановлении после COVID-19</li>
+                  <li>При стрессе</li>
+                  <li>При физических и нервных нагрузках</li>
+                  <li>Для общего укрепления здоровья организма</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">антиковид дыхание</span>
+              <img src="./img/logos/breath.png" alt="Логотип Антиковид Дыхание" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Антиковид дыхание - программный комплекс, основанный на базе слияния технологий виртуально, систем захвата движения,
+                  разработанной лечебной дыхательной гимнастикой и когнитивных техник. Виртуальная реальность применяется для воздействия
+                  на когнитивную составляющую и геймификацию процесса реабилитации, система захвата движения для отслеживания техники
+                  дыхания пациента и последующего визуального стимула в виде роста дерева.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При восстановлении после болезней дыхательной системы (при хронических заболевания вне обострения)</li>
+                  <li>При восстановлении после COVID-19</li>
+                  <li>При стрессе</li>
+                  <li>При физических и нервных нагрузках</li>
+                  <li>Для общего укрепления здоровья организма</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">нейрореабилитация</span>
+              <img src="./img/logos/neuroreabilitation.png" alt="Логотип Нейрореабилитация" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс «Нейрореабилитация» - программный комплекс на базе технологии виртуальной реальности, с элементами
+                  дельфинотерапии и геймификации процесса, что позволяет поддерживать мотивацию пациентов на высоком уровне и эффективно
+                  восстанавливать моторику в условиях лечебно-профилактического учреждения и/или домашних условиях с возможностью
+                  дистанционного контроля.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>---</li>
+                  <li>---</li>
+                  <li>---</li>
+                  <li>---</li>
+                  <li>---</li>
+                  <li>---</li>
+                  <li>---</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">антистресс</span>
+              <img src="./img/logos/antistress.png" alt="Логотип Антистресс" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс "Антистресс" – система для лечения посттравматического стрессового расстройства с использованием виртуальной
+                  реальности в условиях лечебно-профилактического учреждения.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При стрессе</li>
+                  <li>При посттравматическом стрессовом расстройстве</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_color fade-in">
+          <hr class="hr_card" />
+          <div class="card container">
+            <div class="card-header">
+              <span class="card-title">эрго вр</span>
+              <img src="./img/logos/ergovr.png" alt="Логотип эрго-вр" class="card_logo" />
+              <span class="card-info">Узнать подробнее</span>
+            </div>
+            <div class="card-body">
+              <div class="card-descriptions">
+                <p class="card-description-1">
+                  Комплекс аппаратно-программный для двигательной и когнитивной нейрореабилитации пациентов с использованием технологий
+                  виртуальной реальности и биологической обратной связи «Ergo VR» — инновационная система нейро- и эргореабилитации на
+                  основе иммерсивных технологий виртуальной реальности, которая предназначена для активного восстановления врожденных или
+                  приобретенных функциональных нарушений и адаптации к повседневной бытовой и социальной активности пациентов с
+                  когнитивными нарушениями и моторными дисфункциями верхних конечностей.
+                </p>
+                <p class="card-description-2">
+                <ul class="card-description-2-li">
+                  <b>Применяется</b>
+                  <li>При первичном ишемическом инсульте</li>
+                  <!-- <li>Период восстановления после травм</li> -->
+                  <!-- <li>Супратенториальная локализация ИИ</li> -->
+                  <li>При артрозах</li>
+                  <li>При когнитивном дефиците</li>
+                  <li>При профилактике гиподинамии</li>
+                  <li>При рассеянном склерозе</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__main container">
             <div class="footer__main_label fade-in">Девирта</div>
-            <div class="footer__label fade-in">ООО "Академия Терапии Виртуальной Реальностью "Девирта"</div>
+            <div class="footer__label fade-in">
+              ООО "Академия Терапии Виртуальной Реальностью "Девирта"
+            </div>
             <div class="footer__label fade-in">OOO "DEVIRTA 21"</div>
           </div>
         </div>
       </footer>
     </div>
+
     <script src="./js/scripts.js"></script>
     <script src="./js/jquery.js"></script>
     <script>
       // выбираем все ссылки внутри меню
-      $('.menu__link').on('click', function (event) {
+      $(".menu__link").on("click", function (event) {
         // отменяем стандартное поведение ссылки
         event.preventDefault();
 
         // получаем href, который соответствует якорю, к которому нужно прокручивать
-        const href = $(this).attr('href');
+        const href = $(this).attr("href");
 
         // плавно скроллим страницу до элемента, соответствующего якорю
-        $('html, body').animate({
-          scrollTop: $(href).offset().top
-        }, 1000);
+        $("html, body").animate(
+          {
+            scrollTop: $(href).offset().top,
+          },
+          1000
+        );
       });
     </script>
   </body>
