@@ -123,6 +123,10 @@ h1 {
 }
 
 .menu__link:hover {
+  text-decoration: none;
+}
+
+.menu__link:hover {
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   transition: ease-in-out 800ms;
@@ -231,22 +235,41 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin: 10px 0;
+  
+}
+
+.more__button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+  padding: 0px 20px;
+  background-color: #1f1f1f;
+  transition: 0.5s ease-in-out;
 }
 
 .main-block__button {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   display: flex;
   min-height: 30px;
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
   font-size: 16px;
   margin: 10px 0;
   text-decoration: none;
-  background-color: #666666;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  
+  /* background-color: #1f1f1f; */
+}
+
+.main-block__button:hover {
+  text-decoration: none;
+  
 }
 
 /* -------------- Блок "О Нас" -------------- */
@@ -788,4 +811,39 @@ ul {
   .hamburger-menu {
     display: none;
   }
+}
+
+
+
+.button__text {
+  margin-left: 4px;
+  display: block;
+    /* padding: 12px 24px; */
+    color: #333;
+    font-weight: 700;
+      text-align: center;
+      /* padding: 5px 20px; */
+      font-size: 16px;
+      margin: 10px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Manrope";
+}
+
+
+.more__button img.arrow_button {
+  margin-left: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.more__button:hover img.arrow_button {
+  transform: translateX(7px);
+  transition: 0.5s ease-in-out;
+  
+
+}
+
+.more__button:hover {
+  background-color: #464545;
+  transition: 0.5s ease-in-out;
 }
