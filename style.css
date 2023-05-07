@@ -606,13 +606,19 @@ h1 {
 }
 
 .card-description-1 {
-  padding-top: 50px;
+  padding-top: 100px;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
   max-width: 420px;
+}
+
+@media (max-width: 950px) {
+  .card-description-1 {
+    padding-top: 10px;
+  }
 }
 
 .card-description-2 {
