@@ -246,6 +246,7 @@ h1 {
   padding: 0px 20px;
   background-color: #1f1f1f;
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .main-block__button {
@@ -258,7 +259,7 @@ h1 {
   font-weight: 700;
   text-align: center;
   /* padding: 5px 20px; */
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -841,6 +842,17 @@ ul {
   transition: 0.5s ease-in-out;
   
 
+}
+
+.more__button img.arrow_button2 {
+  margin-left: 10px;
+  /* transform: rotate(90deg); */
+  transition: 0.4s ease-in-out;
+}
+
+.more__button:hover img.arrow_button2 {
+  transform: translateY(1px) rotate(90deg);
+  transition: 0.5s ease-in-out;
 }
 
 .more__button:hover {
