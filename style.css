@@ -253,7 +253,13 @@ h1 {
   .more__button {
     display: none; 
   }
+
+  .main__button {
+    display: flex;
+  }
 }
+
+
 .main-block__button {
   /* border-radius: 20px; */
   display: flex;
@@ -416,6 +422,11 @@ h1 {
   }
 }
 
+@media (min-width: 620px) {
+  .card__full-image {
+    display: none;
+  }
+}
 /* -------------- PARALLAX -------------- */
 .parallax {
   transform: translate3d(0, 0, 0);
@@ -869,4 +880,10 @@ ul {
 .more__button:hover {
   background-color: #464545;
   transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 460px) {
+  .arrow_button_card {
+    display: none;
+  }
 }
