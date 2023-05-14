@@ -87,9 +87,11 @@ h1 {
   margin-left: auto;
 }
 
-
-
 .menu__item:not(:last-child) {
+  margin: 0px 40px 0px 0px;
+}
+
+.menu__items {
   margin: 0px 40px 0px 0px;
 }
 
@@ -190,6 +192,7 @@ h1 {
 
 .block-1_image {
   max-width: 570px;
+  padding-left: 150px;
 }
 
 .block-2-image {
@@ -199,6 +202,7 @@ h1 {
 @media (max-width: 1267px) {
   .block-1_image {
     max-width: 500px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 1082px) {
@@ -384,6 +388,7 @@ h1 {
   font-weight: 500;
   font-size: 22px;
   line-height: 175%;
+  white-space: nowrap;
 }
 
 .subtitle_card_text {
@@ -407,6 +412,16 @@ h1 {
 .hand_img {
   max-width: 60px;
   margin-left: 115px;
+}
+
+.box_img {
+  max-width: 60px;
+  margin-left: 270px;
+}
+
+.trawm_img {
+  max-width: 70px;
+  margin-left: 70px;
 }
 
 @media (max-width: 620px) {
@@ -457,9 +472,17 @@ h1 {
   flex-direction: row;
 }
 
+@media (max-width: 790px) {
+  .direction_cards {
+    flex-direction: column;
+  }
+}
+
 .directions_card_cols {
   display: flex;
   flex-direction: column;
+  padding-right: 140px;
+  
 }
 
 .block-3__image {
