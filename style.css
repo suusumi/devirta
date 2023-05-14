@@ -390,7 +390,11 @@ h1 {
   line-height: 175%;
   white-space: nowrap;
 }
-
+@media (max-width: 620px) {
+  .trawm-text {
+    white-space:normal;
+  }
+}
 .subtitle_card_text {
   max-width: 456px;
   font-family: "Manrope";
@@ -434,6 +438,20 @@ h1 {
   .hand_img {
     max-width: 40px;
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .box_img {
+    max-width: 40px;
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 620px) {
+  .trawm_img {
+    max-width: 40px;
+    margin-left: 70px;
   }
 }
 
